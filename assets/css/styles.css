@@ -1,0 +1,225 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+    font-family: "Open Sans";
+    background: #fffaf5;
+}
+input,
+textarea,
+select,
+button {
+    font-size: inherit;
+    font-family: inherit;
+}
+:root {
+    --primary-color: #8476e3;
+}
+.container {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+}
+.btn {
+    color: #212832;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 28px; /* 175% */
+}
+.btn:hover {
+    border-radius: 8px;
+    background: #212832;
+    color: #fff;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 28px; /* 175% */
+}
+.section_heading {
+    color: #212832;
+    font-weight: 700;
+    line-height: 70px; /* 116.667% */
+}
+.section_desc{
+    color: #696D76;
+font-size: 1.8rem;
+font-weight: 400;
+line-height: 30px; /* 166.667% */
+}
+/* header */
+.logo {
+    width: 102.68px;
+    height: 24px;
+}
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    overflow: hidden;
+    background: #fffaf5;
+    margin-top: 42px;
+}
+.header_inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar_list {
+    display: flex;
+}
+.navbar_link {
+    position: relative;
+    padding: 8px 18px;
+    color: #696d76;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 28px; /* 175% */
+}
+
+.navbar_link:hover::before {
+    position: absolute;
+    content: "";
+    background: #7264d6;
+    width: 50px;
+    height: 1px;
+    bottom: 2px;
+    left: 17px;
+    border-radius: 0.5px 0px 0px 0px;
+}
+.navbar_link:hover {
+    color: #212832;
+    font-weight: 600;
+    line-height: 28px; /* 175% */
+}
+.header_action_btn {
+    display: inline-block;
+    min-width: 113px;
+    padding: 12px 28px;
+    --height: 50px;
+}
+.header_action_btn:hover {
+    padding: 12px 28px;
+}
+/* hero */
+.hero {
+    margin-top: 76px;
+}
+.hero_left{
+    width: 46%;
+}
+.hero_left_wallet {
+    margin-left: 24px;
+    position: relative;
+    color: #696d77;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 28px; /* 175% */
+}
+.hero_left_wallet::before {
+    position: absolute;
+    content: "";
+    width: 18px;
+    height: 2px;
+    background: #696d77;
+    left: -24px;
+    bottom: 10px;
+}
+.hero_left_heading{
+    margin-top: 12px;
+    width: 500px;
+    font-size: 6.0rem;
+}
+.hero_left_heading_span{
+    color: #7264D6;
+}
+.hero_left_desc{
+    width: 540px;
+    margin-top: 20px;
+}
+.hero_form{
+
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px 0 20px 0;
+    width: 540px;
+    height: 74px;
+    display: flex;
+    border-radius: 8px;
+background: #FFF;
+box-shadow: 0px 16px 42px 0px rgba(0, 0, 0, 0.07);
+}
+.hero_form_input{
+    border: none;
+    outline: none;
+    padding: 23px 200px 23px 23px;
+}
+.hero_left_submit{
+    flex-shrink: 0;
+    width: 149px;
+    height: 58px;
+    border-radius: 8px;
+    background: #7264D6;
+    color: #FFF;
+text-align: center;
+font-size: 1.6rem;
+font-weight: 600;
+line-height: 28px; /* 175% */
+border:none;
+cursor:pointer;
+outline:none;
+}
+.hero_left_athour{
+    color: #696D76;
+font-size: 1.4rem;
+font-weight: 600;
+line-height: 24px;
+}
+.hero_inner{
+    display: flex;
+    column-gap: 160px;
+}
+.hero_right{
+    position: relative;
+}
+.hero_right_phone{
+    position: relative;
+    width: 296px;
+height: 562px;
+object-fit: cover;
+}
+.hero_right_phone_topleft{
+    position:absolute;
+    object-fit: cover;
+    padding: 14px 10px;
+    background:#FFF;
+    width: 174px;
+    top: 113px;
+    left: -100px;
+}
+.hero_right_phone_topright{
+    width: 130px;
+height: 130px;
+object-fit: cover;
+    position:absolute;
+    top: 127px;
+    right: -164px;
+}
+.hero_right_phone_bottomnight{
+    width: 124px;
+height: 68px;
+object-fit: cover;
+    position:absolute;
+    bottom: 61px;
+    right: -74px;
+}
