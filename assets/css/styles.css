@@ -179,6 +179,9 @@ a {
     cursor: pointer;
     outline: none;
 }
+.hero_left_submit:hover{
+    opacity:0.9;
+}
 .hero_left_athour {
     color: #696d76;
     font-size: 1.4rem;
