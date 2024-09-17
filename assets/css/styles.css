@@ -7,7 +7,7 @@ html {
 body {
     font-size: 1.6rem;
     font-family: "Open Sans";
-    background: #fffaf5;
+   background:#F5F5F5;;
 }
 input,
 textarea,
@@ -67,7 +67,7 @@ a {
     padding: 8px 0;
     z-index: 3;
     overflow: hidden;
-    background: #fffaf5;
+    background:#F5F5F5;
     margin-top: 42px;
 }
 .header_inner {
@@ -160,9 +160,11 @@ a {
     box-shadow: 0px 16px 42px 0px rgba(0, 0, 0, 0.07);
 }
 .hero_form_input {
+    display: inline-block;
+    width: 100%;
     border: none;
     outline: none;
-    padding: 23px 200px 23px 23px;
+    padding: 23px 23px 23px 23px;
 }
 .hero_left_submit {
     flex-shrink: 0;
@@ -608,110 +610,19 @@ line-height: 30px;
     padding: 28px;
     border-radius: 12px;
 background: #FFF;
-box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.07);
+
 cursor:pointer;
-transition: 1s box-shadow;
+transition: 1s box-shadow;  
 z-index: 1;
 }
-.blog_item:hover::before , .blog_item:hover::after{
-    display: block;
-    content: '';
-    position: absolute;
-    background:rgba(114,100,214,0.45);
-  z-index: -2;
-  border-radius: 12px;
-  animation: 1s clockwise infinite;
-  width: 570px;
-height: 216px;
-}
-.blog_item:hover:after {
-    z-index: -2;
-    border-radius: 12px;
-    background: rgba(253, 253, 255, 0.97);
-    animation: 2s counterclockwise infinite;
-  }
-@keyframes clockwise {
-    0% {
-      top: -5px;
-      left: 0;
-    }
-    12% {
-      top: -2px;
-      left: 2px;
-    }
-    25% {
-      top: 0;
-      left: 5px;    
-    }
-    37% {
-      top: 2px;
-      left: 2px;
-    }
-    50% {
-      top: 5px;
-      left: 0;    
-    }
-    62% {
-      top: 2px;
-      left: -2px;
-    }
-    75% {
-      top: 0;
-      left: -5px;
-    }
-    87% {
-      top: -2px;
-      left: -2px;
-    }
-    100% {
-      top: -5px;
-      left: 0;    
-    }
-  }
-  
-@keyframes counterclockwise {
-    0% {
-      top: -5px;
-      right: 0;
-    }
-    12% {
-      top: -2px;
-      right: 2px;
-    }
-    25% {
-      top: 0;
-      right: 5px;    
-    }
-    37% {
-      top: 2px;
-      right: 2px;
-    }
-    50% {
-      top: 5px;
-      right: 0;    
-    }
-    62% {
-      top: 2px;
-      right: -2px;
-    }
-    75% {
-      top: 0;
-      right: -5px;
-    }
-    87% {
-      top: -2px;
-      right: -2px;
-    }
-    100% {
-      top: -5px;
-      right: 0;    
-    }
-  }
+
 .blog_item:hover{
     z-index: 1;
-    box-shadow: 0px 20px 50px 0px rgba(232, 3, 3, 0.07);
+    box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.07);
 }
-
+.blog_item_title:hover{
+    color:#7264D6;
+}
 .blog_item_info{
     display: flex;
     flex-direction: column;
@@ -903,7 +814,7 @@ flex-shrink: 0;
     line-height: 1.75;
     color: #212832;
     border: 1px solid #8e919a;
-    padding: 12px;
+    padding: 12px 8px;
     border-radius: 6px;
     outline: none;
     width: 270px;
