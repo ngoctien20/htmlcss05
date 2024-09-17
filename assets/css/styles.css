@@ -182,7 +182,10 @@ a {
     outline: none;
 }
 .hero_left_submit:hover{
-    opacity:0.9;
+    border-radius: 50px;
+    border-color: #494949;
+    transition: all 0.3s ease 0s;
+    opacity: 0.9;
 }
 .hero_left_athour {
     color: #696d76;
@@ -836,6 +839,12 @@ flex-shrink: 0;
     padding: 12px 18px;
     border: none;
     cursor:pointer;
+}
+.footer_submit:hover{
+    border-radius: 50px;
+    border-color: #494949;
+    transition: all 0.3s ease 0s;
+    opacity: 0.8;
 }
 .footer_contact{
     display: flex;
